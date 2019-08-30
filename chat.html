@@ -8,7 +8,7 @@
         <title>Chat | Kakao Clone</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body class="chats-body">
         <div class="status-bar">
             <div class="status-bar__column">
                 <span class="status-bar__clock">13:54</span>
@@ -33,11 +33,13 @@
                     <i class="fas fa-search"></i>
                 </span>
             </div>
-            <div class="header__icon">
-                <i class="fas fa-bars"></i>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
             </div>
         </header>
-        <main class="chat">
+        <main class="chat-screen">
             <ul class="chat__messages">
                 <span class="chat__timestamp">
                     Tuesday, August 27, 2019
@@ -45,39 +47,57 @@
                 <li class="incoming-message message">
                     <img src="images/jessica.jpg" class="m-avatar message__avatar" >
                     <div class="message__content">
+                        <span class="message__bubble">
+                            Jay, did you get hired?
+                        </span>
                         <span class="message__author">My Beautiful Wife</span>
-                        <div class="message__bubble">
-                            Congrats I Love You!
-                        </div>
                     </div>
-                    <span class="message__timestamp"></span>
                 </li>
-                <li class="incoming-message message">
+                <li class="sent-message message">
                     <span class="message__timestamp"></span>
                         <div class="message__content">
-                        <div class="message__bubble">
-                            Congrats I Love You!
-                        </div>
+                        <span class="message__bubble">
+                            Yes! Finally!!
+                        </span>
                     </div>
                 </li>
+                <li class="incoming-message message">
+                        <img src="images/jessica.jpg" class="m-avatar message__avatar" >
+                        <div class="message__content">
+                            <span class="message__bubble">
+                                Congrats I Love You!
+                            </span>
+                            <span class="message__author">My Beautiful Wife</span>
+                        </div>
+                    </li>
+                    <li class="sent-message message">
+                        <span class="message__timestamp"></span>
+                            <div class="message__content">
+                            <span class="message__bubble">
+                                Thanks to You!
+                            </span>
+                        </div>
+                    </li>
+
             </ul>
         </main>
         <div class="chat__write">
-            <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="Send message" class="chat__write-input">
-        </div>
-        <div class="chat__write-column">
-            <span class="chat__write-icon">
-                <i class="far fa-smile-wink"></i>
-            </span>
-            <span class="chat__write-icon">
-                <i class="fas fa-microphone"></i>
-            </span>
-        </div>
-        <div class="chat__write-column">
-
+            <div class="chat__write-column">
+                <i class="far fa-plus-square"></i>
+            </div>
+            <div class="chat__write-column">
+                <input type="text" placeholder="Send message" class="chat__write-input">
+            </div>
+            <div class="chat__write-column">
+                <span class="chat__write-icon">
+                    <i class="far fa-smile-wink"></i>
+                </span>
+                <span class="chat__write-icon">
+                    <i class="fas fa-microphone"></i>
+                </span>
+            </div>
+            <div class="chat__write-column">  
+            </div>
         </div>
     </body>
 </html>
